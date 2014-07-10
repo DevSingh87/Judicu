@@ -1,0 +1,42 @@
+ <fieldset>
+          <div class="row-fluid">
+            <div class="span4">
+              <label>Name</label>
+             
+              <%= f.text_field :name %>			  
+            </div><!--/span-->
+            <div class="span4">
+              <label>Father's/Husband's Name</label>
+               <%= f.text_field :father_or_husband_name %>			  
+            </div><!--/span-->
+			<div class="span1">
+              <label>Age</label>
+               <%= f.text_field :age, :class => "input-mini" %>			  
+            </div><!--/span-->
+			
+			
+		  </div><!--/row-->
+		  <div class="row-fluid">
+            <div class="span4" >
+              <label>Contact No.</label>
+               <%= f.text_field :contact_no%>			  
+            </div><!--/span-->
+            <div class="span5">
+              <label>Email Id</label>
+               <%= f.text_field :email %>			  
+            </div><!--/span-->
+			
+		  </div><!--/row-->
+           <div class="row-fluid">
+            <div class="span5">
+              <label>Address</label>
+                 <%= f.text_area :address, :class=>"span12",  :rows => 3 %>			  
+            </div><!--/span-->
+            <div class="span5">
+              <label>Note</label>
+                 <%= f.text_area :note, :class=>"span12",  :rows => 3 %>			  
+            </div><!--/span-->
+			
+		  </div><!--/row-->
+		  <%= link_to "remove", '#', class: "remove_fields btn btn-danger" %>
+ </fieldset>    

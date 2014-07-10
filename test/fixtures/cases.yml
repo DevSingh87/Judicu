@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  case_title: MyString
+  case_type: MyString
+  case_taken_as: MyString
+  case_running_since: MyString
+  colony_or_village: MyString
+  police_station: MyString
+  tehsil: MyString
+  district: MyString
+  acts: MyString
+  additional_details: MyText
+
+two:
+  case_title: MyString
+  case_type: MyString
+  case_taken_as: MyString
+  case_running_since: MyString
+  colony_or_village: MyString
+  police_station: MyString
+  tehsil: MyString
+  district: MyString
+  acts: MyString
+  additional_details: MyText

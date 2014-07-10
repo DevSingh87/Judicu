@@ -1,0 +1,45 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+    <div>
+  <div class="profile">
+     <%= f.label 'Registering As' %>
+     <%= f.collection_select(:role_ids, Role.find(:all), :id, :name, :include_blank => "Please select an artist...") %><br/>
+  <b>Personal Details</b>
+  <div class="personaldetails">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <b>Work Experience</b>
+  <div class="workex">
+  <%= f.fields_for :work_experiences do |workex| %>
+   <%= render 'work_experience_fields', f: workex %> 
+  <% end %>
+  </div>
+  <div id="addworkex">
+  <%= link_to_add_fields "Add Work Experience", f, :work_experiences %> 
+  </div>
+  <b>Academics</b>
+  <div class="acads">
+  <%= f.fields_for :academics do |acad| %>
+   <%= render 'academic_fields', f: acad %> 
+  <% end %>
+  </div>
+  <div id="addacad">
+  <%= link_to_add_fields "Add Academics", f, :academics %> 
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  </div>
+<% end %>

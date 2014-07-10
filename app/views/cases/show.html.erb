@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Case title:</b>
+  <%= @case.case_title %>
+</p>
+
+<p>
+  <b>Case type:</b>
+  <%= @case.case_type %>
+</p>
+
+<p>
+  <b>Case taken as:</b>
+  <%= @case.case_taken_as %>
+</p>
+
+<p>
+  <b>Case running since:</b>
+  <%= @case.case_running_since %>
+</p>
+
+<p>
+  <b>Colony or village:</b>
+  <%= @case.colony_or_village %>
+</p>
+
+<p>
+  <b>Police station:</b>
+  <%= @case.police_station %>
+</p>
+
+<p>
+  <b>Tehsil:</b>
+  <%= @case.tehsil %>
+</p>
+
+<p>
+  <b>District:</b>
+  <%= @case.district %>
+</p>
+
+<p>
+  <b>Acts:</b>
+  <%= @case.acts %>
+</p>
+
+<p>
+  <b>Additional details:</b>
+  <%= @case.additional_details %>
+</p>
+
+
+<%= link_to 'Edit', edit_case_path(@case) %> |
+<%= link_to 'Back', cases_path %>

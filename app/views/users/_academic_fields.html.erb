@@ -1,0 +1,9 @@
+<fieldset>
+    <%= f.label 'Edu Level' %><%= f.text_field :edu_level %><%= f.label 'Course Type' %><%= f.text_field :course_type %><br />
+    <%= f.label 'Course' %><%= f.text_field :course_name %><%= f.label 'Specialization' %><%= f.text_field :specialization %><br />
+	<%= f.label 'Duration' %><%= f.text_field :duration_from %><%= f.text_field :duration_to %><br/>
+	<%= f.label 'Institute' %><%= f.text_field :institute %><br/>
+	<%= f.hidden_field :_destroy %>
+    <%= link_to "remove", '#', class: "remove_fields" %>
+</fieldset>
+ 

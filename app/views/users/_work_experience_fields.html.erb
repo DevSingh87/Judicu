@@ -1,0 +1,11 @@
+<fieldset>
+    <%= f.label 'From' %><%= f.text_field :duration_from_month %><%= f.text_field :duration_from_year %><%= f.label 'To' %><%= f.text_field :duration_to_month %><%= f.text_field :duration_to_year %><br />
+    <%= f.label 'Company Name' %><%= f.text_field :company_name %><br />
+	<%= f.label 'Location' %><%= f.text_field :location %><br/>
+	<%= f.label 'Designation' %><%= f.text_field :designation %><%= f.label 'Level' %><%= f.text_field :level %><br/>
+	<%= f.label 'Role & Resposibilities' %><%= f.text_area :role_responsibilities %><br/>
+	<%= f.label 'Additional(Optional)' %><%= f.text_area :additional %><br/>
+	<%= f.hidden_field :_destroy %>
+    <%= link_to "remove", '#', class: "remove_fields" %>
+</fieldset>
+ 

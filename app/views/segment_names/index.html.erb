@@ -1,0 +1,25 @@
+<h1>Listing segment_names</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @segment_names.each do |segment_name| %>
+  <tr>
+    <td><%= segment_name.name %></td>
+   
+    <td><%= link_to 'Show', segment_name %></td>
+    <td><%= link_to 'Edit', edit_segment_name_path(segment_name) %></td>
+    <td><%= link_to 'Destroy', segment_name, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Segment name', new_segment_name_path %>

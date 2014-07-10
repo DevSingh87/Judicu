@@ -1,0 +1,2 @@
+module SegmentTypesHelper
+end
